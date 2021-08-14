@@ -50,7 +50,7 @@ class Article:
         self.search_keyword = search_keyword
 
 def write_csv(sps):
-    with open('c:/Users/akk03/Documents/scraiping_sample/data/search_kandai_sample.csv', 'w', encoding='UTF-8') as f:
+    with open('c:/Users/akk03/Documents/pyhton_bot_chat/search_kandai_sample.csv', 'w', encoding='UTF-8') as f:
         writer = csv.writer(f)
         writer.writerow([sps,i])
 
