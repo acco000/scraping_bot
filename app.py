@@ -219,18 +219,23 @@ def handle_message(event):
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171378.html', # 137 卒業研究
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171190.html', # 136 社会調査実習
                 ]
-#================================シラバス=================================================================================
-    #もし一つ目の配列になかったら次
+#================================シラバス================================================================================
+
     keywords = event.message.text
     found  = 0
+    j = 0
     for i in url_array:
         s1 = kamokumei(i)
+        j+=1
         if(keywords == s1):
             r = requests.get(i)
             url = i
             soup = BeautifulSoup(r.content, "html.parser")
             sps = soup.find(id="hyokahouhou").text
             found = 1
+        elif j == len(url_array):
+            break
+
     if  found == 1:
         reply_message = f"その科目の評価方法は,\n「{sps}」です.\n{url}"
     else:
@@ -239,8 +244,8 @@ def handle_message(event):
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=reply_message))
-
 #event.message.textに相手の言った言葉がはいっている
 
 if __name__ == "__main__":
     app.run()
+    
