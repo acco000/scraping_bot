@@ -110,7 +110,7 @@ def handle_message(event):
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/09/170999.html', # 28 認知心理学
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/05/170597.html', # 29 情報行動論
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171083.html', # 30 インターネットと心理
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171471.html', # 31 コミュニケーションと行為cd 
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171471.html', # 31 コミュニケーションと行為
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171226.html', # 32 現代社会論
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171227.html', # 33 情報・文化・コミュニケーション
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171573.html', # 34 情報メディア論
@@ -176,12 +176,12 @@ def handle_message(event):
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171166.html', # 94 情報伝送の物理
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171045.html', # 95 インタフェース工学
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171310.html', # 96 数学演習（解析）
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171575.html', # 97 テーマ別研究（数理思想史）
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171571.html', # 98 テーマ別研究（経営情報からみる企業のミクロ分析とマクロ分析）
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171565.html', # 99 テーマ別研究（エッシャーの数理）
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171570.html', # 100 テーマ別研究（情報空間における身体表現と表象文化の実践）
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171568.html', # 101 特別講義（スポーツインテリジェンス）
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171569.html', # 102 特別講義（情報空間と身体表現）
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171575.html', # 97 テーマ別研究（数理思想史）
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171571.html', # 98 テーマ別研究（経営情報からみる企業のミクロ分析とマクロ分析）
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171565.html', # 99 テーマ別研究（エッシャーの数理）
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171570.html', # 100 テーマ別研究（情報空間における身体表現と表象文化の実践）
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171568.html', # 101 特別講義（スポーツインテリジェンス）
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171569.html', # 102 特別講義（情報空間と身体表現）
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171514.html', # 103 ソフトウェア実習
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171247.html', # 104 プログラミング基礎実習
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/09/170939.html', # 105 制作実習（映像基礎）
@@ -201,28 +201,29 @@ def handle_message(event):
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171543.html', # 119 テキストマイニング実習
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171553.html', # 120 プログラミング実習（Ｐｙｔｈｏｎ）
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171168.html', # 121 オブジェクト指向プログラミング実習（Ｊａｖａ）
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171039.html', # 122 制作実習（映像プロフェッショナル）
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171044.html', # 123 制作実習（地域コンテンツ）
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171042.html', # 124 ネットジャーナリズム実習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171111.html', # 125 インタラクティブアート実習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171317.html', # 126 ＣＧ実習（３Ｄコンテンツ開発）
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171173.html', # 127 行動科学実習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/02/170216.html', # 128 法情報処理実習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171115.html', # 129 マクロ政治データ分析実習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/02/170218.html', # 130 経営情報処理実習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171519.html', # 131 経営分析実習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171555.html', # 132 フィジカルコンピューティング実習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171468.html', # 133 サウンドインタラクション実習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171142.html', # 134 ロボットブレインコンピューティング実習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/08/170885.html', # 135 アプリケーション開発実習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171561.html', # 136 専門演習
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171378.html', # 137 卒業研究
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171190.html', # 138 社会調査実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171039.html', # 122 制作実習（映像プロフェッショナル）
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171044.html', # 123 制作実習（地域コンテンツ）
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171042.html', # 124 ネットジャーナリズム実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171111.html', # 125 インタラクティブアート実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171317.html', # 126 ＣＧ実習（３Ｄコンテンツ開発）
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171173.html', # 127 行動科学実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/02/170216.html', # 128 法情報処理実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171115.html', # 129 マクロ政治データ分析実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/02/170218.html', # 130 経営情報処理実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171519.html', # 131 経営分析実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171555.html', # 132 フィジカルコンピューティング実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171468.html', # 133 サウンドインタラクション実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171142.html', # 134 ロボットブレインコンピューティング実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/08/170885.html', # 135 アプリケーション開発実習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171561.html', # 136 専門演習
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171378.html', # 137 卒業研究
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171190.html', # 136 社会調査実習
                 ]
 #================================シラバス=================================================================================
+    #もし一つ目の配列になかったら次
     keywords = event.message.text
     found  = 0
-    for i in url_array:
+    for i in range(url_array):
         s1 = kamokumei(i)
         if(keywords == s1):
             r = requests.get(i)
@@ -230,7 +231,8 @@ def handle_message(event):
             soup = BeautifulSoup(r.content, "html.parser")
             sps = soup.find(id="hyokahouhou").text
             found = 1
-
+        else:
+            break
     if  found == 1:
         reply_message = f"その科目の評価方法は,\n「{sps}」です.\n{url}"
     else:
