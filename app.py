@@ -200,7 +200,7 @@ url_array = ['http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/00/1700
             'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171378.html', # 137 卒業研究
             'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171190.html', # 138 社会調査実習
             ]
-keywords = input()
+""" keywords = input()
 for i in url_array:
     s1 = kamokumei(i)
     if(keywords == s1):
@@ -208,7 +208,7 @@ for i in url_array:
         soup = BeautifulSoup(r.content, "html.parser")
         sps = soup.find(id="hyokahouhou").text
         #write_csv(sps)
-        print('Program Finished')
+        print('Program Finished') """
 
 #f = codecs.open('test', 'ab', 'cp932', 'ignore')
 #s = '\xa0'
@@ -383,4 +383,4 @@ def handle_message(event):
 #event.message.textに相手の言った言葉がはいっている
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)
+    app.run()
