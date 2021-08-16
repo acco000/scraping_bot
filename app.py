@@ -383,4 +383,4 @@ def handle_message(event):
 #event.message.textに相手の言った言葉がはいっている
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
