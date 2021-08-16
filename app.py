@@ -49,10 +49,10 @@ class Article:
         self.url = url
         self.search_keyword = search_keyword
 
-def write_csv(sps):
-    with open('c:/Users/akk03/Documents/pyhton_bot_chat/search_kandai_sample.csv', 'w', encoding='UTF-8') as f:
-        writer = csv.writer(f)
-        writer.writerow([sps,i])
+#def write_csv(sps):
+    #with open('c:/Users/akk03/Documents/pyhton_bot_chat/search_kandai_sample.csv', 'w', encoding='UTF-8') as f:
+        #writer = csv.writer(f)
+        #writer.writerow([sps,i])
 
 def kamokumei(target_url):
     r = requests.get(target_url)
@@ -207,7 +207,7 @@ for i in url_array:
         r = requests.get(i)
         soup = BeautifulSoup(r.content, "html.parser")
         sps = soup.find(id="hyokahouhou").text
-        write_csv(sps)
+        #write_csv(sps)
         print('Program Finished')
 
 #f = codecs.open('test', 'ab', 'cp932', 'ignore')
