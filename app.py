@@ -231,8 +231,6 @@ def handle_message(event):
             soup = BeautifulSoup(r.content, "html.parser")
             sps = soup.find(id="hyokahouhou").text
             found = 1
-        else:
-            break
     if  found == 1:
         reply_message = f"その科目の評価方法は,\n「{sps}」です.\n{url}"
     else:
