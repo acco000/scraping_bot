@@ -223,7 +223,7 @@ def handle_message(event):
     #もし一つ目の配列になかったら次
     keywords = event.message.text
     found  = 0
-    for i in range(url_array):
+    for i in url_array:
         s1 = kamokumei(i)
         if(keywords == s1):
             r = requests.get(i)
