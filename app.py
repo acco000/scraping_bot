@@ -151,30 +151,30 @@ def handle_message(event):
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171288.html', # 69 モバイル・コンピューティング
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171406.html', # 70 リスク情報論
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171290.html', # 71 事故・災害リスク情報論
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171305.html', # 72 情報デザイン
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170126.html', # 73 コンピュータ・グラフィックス
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171469.html', # 74 自然言語処理
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/08/170871.html', # 75 言語情報論
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171457.html', # 76 マルチメディア教育論
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171499.html', # 77 ヴィジュアルコミュニケーション・デザイン論
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171305.html', # 72 情報デザイン
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170126.html', # 73 コンピュータ・グラフィックス
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171469.html', # 74 自然言語処理
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/08/170871.html', # 75 言語情報論
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171457.html', # 76 マルチメディア教育論
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171499.html', # 77 ヴィジュアルコミュニケーション・デザイン論
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170128.html', # 78 プリント・メディア制作論
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171523.html', # 79 広告実践論
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171233.html', # 80 メディアイベント論
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171006.html', # 81 ネットジャーナリズム論
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/06/170609.html', # 82 地域メディア論
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171531.html', # 83 ビジネス文書管理
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171523.html', # 79 広告実践論
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171233.html', # 80 メディアイベント論
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171006.html', # 81 ネットジャーナリズム論
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/06/170609.html', # 82 地域メディア論
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171531.html', # 83 ビジネス文書管理
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/09/170933.html', # 84 文書処理
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171322.html', # 85 社会心理学
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171078.html', # 86 ビジネス・イノベーション
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171008.html', # 87 リスクマネジメント論
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/06/170610.html', # 88 マクロ政治分析
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171388.html', # 89 画像情報処理
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170122.html', # 90 音声情報処理
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171500.html', # 91 感性情報処理
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171322.html', # 85 社会心理学
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171078.html', # 86 ビジネス・イノベーション
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171008.html', # 87 リスクマネジメント論
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/06/170610.html', # 88 マクロ政治分析
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171388.html', # 89 画像情報処理
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170122.html', # 90 音声情報処理
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171500.html', # 91 感性情報処理
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170154.html', # 92 ファジィ情報処理
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/08/170810.html', # 93 関数解析
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171166.html', # 94 情報伝送の物理
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171045.html', # 95 インタフェース工学
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/08/170810.html', # 93 関数解析
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171166.html', # 94 情報伝送の物理
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171045.html', # 95 インタフェース工学
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171310.html', # 96 数学演習（解析）
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171575.html', # 97 テーマ別研究（数理思想史）
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171571.html', # 98 テーマ別研究（経営情報からみる企業のミクロ分析とマクロ分析）
