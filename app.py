@@ -102,7 +102,7 @@ def handle_message(event):
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171373.html', # 20 情報システムの基礎
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171081.html', # 21 プログラミング入門
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/09/170985.html', # 22 認知科学
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/09/170930.html', # 23 コミュニケーションと能力
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/09/170930.html', # 23 コミュニケーションと能力
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171480.html', # 24 メディアカルチャー論
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171402.html', # 25 パブリック・アドミニストレーション論
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171546.html', # 26 組織意思決定論
@@ -122,7 +122,7 @@ def handle_message(event):
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171085.html', # 40 社会調査方法論
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171192.html', # 41 質的調査法
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171478.html', # 42 知的財産法（産業財産権）
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171451.html', # 43 知的財産法
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171451.html', # 43 知的財産法
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171287.html', # 44 情報セキュリティ論
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/09/170932.html', # 45 Ｗｅｂマーケティング
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171090.html', # 46 マーケティング・リサーチ
@@ -150,7 +150,7 @@ def handle_message(event):
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171158.html', # 68 オブジェクト指向プログラミング（Ｊａｖａ）
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171288.html', # 69 モバイル・コンピューティング
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171406.html', # 70 リスク情報論
-                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171290.html', # 71 事故・災害リスク情報論
+                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171290.html', # 71 事故・災害リスク情報論
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171305.html', # 72 情報デザイン
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170126.html', # 73 コンピュータ・グラフィックス
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171469.html', # 74 自然言語処理
