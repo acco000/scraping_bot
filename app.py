@@ -246,7 +246,7 @@ def handle_message(event):
             
     if  found == 1:
         reply_message = f"その科目の評価方法は,\n「{sps}」\nです.\n{url}"
-    elif event.message.text != BeautifulSoup(r.content, "html.parser").find(id="kamoku").text:
+    else:
         reply_message = f"すみません. \n関大総情秋学期の講義にのみ対応しています. もう一度送信内容をご確認ください."
 
     line_bot_api.reply_message(
