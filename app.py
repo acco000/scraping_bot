@@ -50,25 +50,25 @@ class Article:
         self.search_keyword = search_keyword
 
 #def write_csv(sps):
-    #with open('c:/Users/akk03/Documents/pyhton_bot_chat/search_kandai_sample.csv', 'w', encoding='UTF-8') as f:
-        #writer = csv.writer(f)
-        #writer.writerow([sps,i])
+#    with open('c:/Users/akk03/Documents/pyhton_bot_chat/search_kandai_sample.csv', 'w', encoding='UTF-8') as f:
+#        writer = csv.writer(f)
+#        writer.writerow([sps,i])
 
-def kamokumei(target_url):
-    r = requests.get(target_url)
-    soup = BeautifulSoup(r.content, "html.parser")#(r.content, "html.parser") #(r.content, 'lxml')
-    kamoku = soup.find(id="kamoku").text
-    return kamoku
+#def kamokumei(target_url):
+#    r = requests.get(target_url)
+#    soup = BeautifulSoup(r.content, "html.parser")#(r.content, "html.parser") #(r.content, 'lxml')
+#    kamoku = soup.find(id="kamoku").text
+#    return kamoku
 
-""" keywords = input()
-for i in url_array:
-    s1 = kamokumei(i)
-    if(keywords == s1):
-        r = requests.get(i)
-        soup = BeautifulSoup(r.content, "html.parser")
-        sps = soup.find(id="hyokahouhou").text
-        #write_csv(sps)
-        print('Program Finished') """
+#keywords = input()
+#    for i in url_array:
+#        s1 = kamokumei(i)
+#    if(keywords == s1):
+#        r = requests.get(i)
+#        soup = BeautifulSoup(r.content, "html.parser")
+#        sps = soup.find(id="hyokahouhou").text
+#        #write_csv(sps)
+#        print('Program Finished') 
 
 #f = codecs.open('test', 'ab', 'cp932', 'ignore')
 #s = '\xa0'
@@ -150,6 +150,8 @@ def handle_message(event):
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171158.html', # 68 オブジェクト指向プログラミング（Ｊａｖａ）
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171288.html', # 69 モバイル・コンピューティング
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171406.html', # 70 リスク情報論
+
+                #=======================================3年次配当====================================================================
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171290.html', # 71 事故・災害リスク情報論
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171305.html', # 72 情報デザイン
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170126.html', # 73 コンピュータ・グラフィックス
@@ -183,6 +185,7 @@ def handle_message(event):
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171568.html', # 101 特別講義（スポーツインテリジェンス）
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171569.html', # 102 特別講義（情報空間と身体表現）
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171514.html', # 103 ソフトウェア実習
+                #===========================================3年次配当====================================================================
 
                 #===========================================↓↓実習↓↓====================================================
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171247.html', # 104 プログラミング基礎実習
@@ -205,6 +208,7 @@ def handle_message(event):
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171168.html', # 121 オブジェクト指向プログラミング実習（Ｊａｖａ）
                 #===========================================↑↑実習↑↑====================================================
 
+                #========================================↑↑実習(3.4年)↑↑====================================================
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171039.html', # 122 制作実習（映像プロフェッショナル）
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171044.html', # 123 制作実習（地域コンテンツ）
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171042.html', # 124 ネットジャーナリズム実習
@@ -221,6 +225,8 @@ def handle_message(event):
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/08/170885.html', # 135 アプリケーション開発実習
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171561.html', # 136 専門演習
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171378.html', # 137 卒業研究
+                #========================================↑↑実習(3.4年)↑↑====================================================
+                
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171190.html', # 136 社会調査実習
                 ]
 #================================シラバス================================================================================
@@ -229,9 +235,11 @@ def handle_message(event):
     found  = 0
     j = 0
     for i in url_array:
-        s1 = kamokumei(i)
+        r = requests.get(i)
+        soup = BeautifulSoup(r.content, "html.parser")
+        kamoku = soup.find(id="kamoku").text
         j = j + 1
-        if keywords == s1:
+        if keywords == kamoku:
             r = requests.get(i)
             url = i
             soup = BeautifulSoup(r.content, "html.parser")
@@ -249,7 +257,7 @@ def handle_message(event):
         event.reply_token,
         TextSendMessage(text=reply_message))
 #event.message.textに相手の言った言葉がはいっている
-
+    
 if __name__ == "__main__":
     app.run()
     
