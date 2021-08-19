@@ -245,12 +245,10 @@ def handle_message(event):
             url = i
             found = 1
             break
-        elif j == len(url_array):
-            found = 0
-            break
+            
     if  found == 1:
         reply_message = f"その科目の評価方法は,\n「{sps}」\nです.\n{url}"
-    elif found == 0:
+    elif found == 0 or j == len(url_array):
         reply_message = f"すみません. \n関大総情秋学期の講義にのみ対応しています. もう一度送信内容をご確認ください."
 
     line_bot_api.reply_message(
