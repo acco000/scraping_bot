@@ -230,20 +230,20 @@ def handle_message(event):
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171190.html', # 136 社会調査実習
                 ]
 #================================シラバス================================================================================
-    found  = 0
+    #soup = BeautifulSoup(r.content, "html.parser") #soup.find(id="kamoku").text found  = 0
     j = 0
     for i in url_array:
         j = j + 1
         r = requests.get(i)
-        #soup = BeautifulSoup(r.content, "html.parser") #soup.find(id="kamoku").text
         if event.message.text != BeautifulSoup(r.content, "html.parser").find(id="kamoku").text:
-            continue
+            pass
         elif event.message.text == BeautifulSoup(r.content, "html.parser").find(id="kamoku").text:
             r = requests.get(i)
             soup = BeautifulSoup(r.content, "html.parser")
             sps = soup.find(id="hyokahouhou").text
             url = i
             found = 1
+            break
         elif j == len(url_array):
             break
     if  found == 1:
