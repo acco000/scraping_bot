@@ -237,7 +237,7 @@ def handle_message(event):
         j = j + 1
         r = requests.get(i)
         if event.message.text != BeautifulSoup(r.content, "html.parser").find(id="kamoku").text:
-            pass
+            found = 0
         elif event.message.text == BeautifulSoup(r.content, "html.parser").find(id="kamoku").text:
             r = requests.get(i)
             soup = BeautifulSoup(r.content, "html.parser")
@@ -246,10 +246,11 @@ def handle_message(event):
             found = 1
             break
         elif j == len(url_array):
+            found = 0
             break
     if  found == 1:
         reply_message = f"その科目の評価方法は,\n「{sps}」\nです.\n{url}"
-    else:
+    elif found == 0:
         reply_message = f"すみません. \n関大総情秋学期の講義にのみ対応しています. もう一度送信内容をご確認ください."
 
     line_bot_api.reply_message(
