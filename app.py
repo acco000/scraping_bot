@@ -235,11 +235,10 @@ def handle_message(event):
     for i in url_array:
         j = j + 1
         r = requests.get(i)
-        soup = BeautifulSoup(r.content, "html.parser")
-        soup.find(id="kamoku").text
-        if event.message.text != soup.find(id="kamoku").text:
+        #soup = BeautifulSoup(r.content, "html.parser") #soup.find(id="kamoku").text
+        if event.message.text != BeautifulSoup(r.content, "html.parser").find(id="kamoku").text:
             continue
-        elif event.message.text == soup.find(id="kamoku").text:
+        elif event.message.text == BeautifulSoup(r.content, "html.parser").find(id="kamoku").text:
             r = requests.get(i)
             soup = BeautifulSoup(r.content, "html.parser")
             sps = soup.find(id="hyokahouhou").text
