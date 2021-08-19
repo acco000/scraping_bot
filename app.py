@@ -188,24 +188,24 @@ def handle_message(event):
                 #===========================================3年次配当====================================================================
 
                 #===========================================↓↓実習↓↓====================================================
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171247.html', # 104 プログラミング基礎実習
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/09/170939.html', # 105 制作実習（映像基礎）
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171100.html', # 106 グラフィックス基礎実習
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171389.html', # 107 データリテラシー実習
-                #http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171252.html', # 108 ネットワーク実習
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171270.html', # 109 科学リテラシー実習
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171517.html', # 110 制作実習（ヴィジュアルコミュニケーション）
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170191.html', # 111 制作実習（広告）
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170167.html', # 112 制作実習（マルチメディア）
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171307.html', # 113 制作実習（映像応用）
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171021.html', # 114 ＣＧ実習（制作基礎）
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171258.html', # 115 デジタルアーカイブ実習
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/08/170812.html', # 116 データ分析実習
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171465.html', # 117 質的調査実習
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171179.html', # 118 モデル分析実習
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171543.html', # 119 テキストマイニング実習
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171553.html', # 120 プログラミング実習（Ｐｙｔｈｏｎ）
-                #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171168.html', # 121 オブジェクト指向プログラミング実習（Ｊａｖａ）
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171247.html', # 104 プログラミング基礎実習
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/09/170939.html', # 105 制作実習（映像基礎）
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171100.html', # 106 グラフィックス基礎実習
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171389.html', # 107 データリテラシー実習
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171252.html', # 108 ネットワーク実習
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171270.html', # 109 科学リテラシー実習
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171517.html', # 110 制作実習（ヴィジュアルコミュニケーション）
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170191.html', # 111 制作実習（広告）
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/01/170167.html', # 112 制作実習（マルチメディア）
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/13/171307.html', # 113 制作実習（映像応用）
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/10/171021.html', # 114 ＣＧ実習（制作基礎）
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/12/171258.html', # 115 デジタルアーカイブ実習
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/08/170812.html', # 116 データ分析実習
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/14/171465.html', # 117 質的調査実習
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171179.html', # 118 モデル分析実習
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171543.html', # 119 テキストマイニング実習
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/15/171553.html', # 120 プログラミング実習（Ｐｙｔｈｏｎ）
+                'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171168.html', # 121 オブジェクト指向プログラミング実習（Ｊａｖａ）
                 #===========================================↑↑実習↑↑====================================================
 
                 #========================================↑↑実習(3.4年)↑↑====================================================
@@ -230,16 +230,14 @@ def handle_message(event):
                 'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171190.html', # 136 社会調査実習
                 ]
 #================================シラバス================================================================================
-
-    keywords = event.message.text
     found  = 0
     j = 0
     for i in url_array:
+        j = j + 1
         r = requests.get(i)
         soup = BeautifulSoup(r.content, "html.parser")
-        kamoku = soup.find(id="kamoku").text
-        j = j + 1
-        if keywords == kamoku:
+        #soup.find(id="kamoku").text
+        if event.message.text == soup.find(id="kamoku").text:
             r = requests.get(i)
             url = i
             soup = BeautifulSoup(r.content, "html.parser")
