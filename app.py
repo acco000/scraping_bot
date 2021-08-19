@@ -236,16 +236,17 @@ def handle_message(event):
         j = j + 1
         r = requests.get(i)
         soup = BeautifulSoup(r.content, "html.parser")
-        #soup.find(id="kamoku").text
-        if event.message.text == soup.find(id="kamoku").text:
+        soup.find(id="kamoku").text
+        if event.message.text != soup.find(id="kamoku").text:
+            continue
+        elif event.message.text == soup.find(id="kamoku").text:
             r = requests.get(i)
-            url = i
             soup = BeautifulSoup(r.content, "html.parser")
             sps = soup.find(id="hyokahouhou").text
+            url = i
             found = 1
         elif j == len(url_array):
             break
-
     if  found == 1:
         reply_message = f"その科目の評価方法は,\n「{sps}」です.\n{url}"
     else:
