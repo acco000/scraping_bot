@@ -246,8 +246,10 @@ def handle_message(event):
             
     if  found == 1:
         reply_message = f"その科目の評価方法は,\n「{sps}」\nです.\n{url}"
-    else:
+    elif found != 1:
         reply_message = f"すみません. \n関大総情秋学期の講義にのみ対応しています. もう一度送信内容をご確認ください."
+    elif event.message.text == "あち":
+        reply_message = f"ぶちふきふき."
 
     line_bot_api.reply_message(
         event.reply_token,
