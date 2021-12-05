@@ -49,31 +49,16 @@ class Article:
         self.url = url
         self.search_keyword = search_keyword
 
-#def write_csv(sps):
-#    with open('c:/Users/akk03/Documents/pyhton_bot_chat/search_kandai_sample.csv', 'w', encoding='UTF-8') as f:
-#        writer = csv.writer(f)
-#        writer.writerow([sps,i])
+def write_csv(sps):
+    with open('c:/Users/akk03/Documents/pyhton_bot_chat/search_kandai_sample.csv', 'w', encoding='UTF-8') as f:
+        writer = csv.writer(f)
+        writer.writerow([sps,i])
 
-#def kamokumei(target_url):
-#    r = requests.get(target_url)
-#    soup = BeautifulSoup(r.content, "html.parser")#(r.content, "html.parser") #(r.content, 'lxml')
-#    kamoku = soup.find(id="kamoku").text
-#    return kamoku
-
-#keywords = input()
-#    for i in url_array:
-#        s1 = kamokumei(i)
-#    if(keywords == s1):
-#        r = requests.get(i)
-#        soup = BeautifulSoup(r.content, "html.parser")
-#        sps = soup.find(id="hyokahouhou").text
-#        #write_csv(sps)
-#        print('Program Finished') 
-
-#f = codecs.open('test', 'ab', 'cp932', 'ignore')
-#s = '\xa0'
-#f.write(sps) # codecsを使うとstrのままwriteできる
-#f.close()
+def kamokumei(target_url):
+    r = requests.get(target_url)
+    soup = BeautifulSoup(r.content, "html.parser")#(r.content, "html.parser") #(r.content, 'lxml')
+    kamoku = soup.find(id="kamoku").text
+    return kamoku
 
 
 @handler.add(MessageEvent, message=TextMessage)
@@ -230,7 +215,6 @@ def handle_message(event):
                 #'http://syllabus3.jm.kansai-u.ac.jp/syllabus/search/ref/1/7/11/171190.html', # 136 社会調査実習
                 ]
 #================================シラバス================================================================================
-    #soup = BeautifulSoup(r.content, "html.parser") #soup.find(id="kamoku").text 
     found  = 0
     for i in url_array:
         r = requests.get(i)
@@ -248,8 +232,7 @@ def handle_message(event):
         reply_message = f"その科目の評価方法は,\n「{sps}」\nです.\n{url}"
     elif found != 1:
         reply_message = f"すみません. \n関大総情秋学期の講義にのみ対応しています. もう一度送信内容をご確認ください."
-    elif event.message.text == "あち":
-        reply_message = f"ぶちふきふき."
+    
 
     line_bot_api.reply_message(
         event.reply_token,
